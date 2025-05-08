@@ -1,5 +1,13 @@
-This notebook is a notebook for the Datavidia (Data Science Competition) held by Intitut Teknologi Bandung, 2025.
+This notebook is a notebook for the Data Science Competition held by IPB University, 2025.
 
-Fluctuations in food commodity prices have significant economic and social impacts, from household budgets to global trade policies. In this competition, participants are challenged to develop predictive models that can speculate on food commodity prices based on historical data. The dataset provided includes various features such as previous prices, currency exchange rates, global supply trends, and macroeconomic indicators. By using this data, participants are expected to be able to build models that are able to predict the price of each commodity on each date at a certain time interval with a high degree of accuracy.
+Problem Statement:
+The current paper recommendation system is not effective enough in providing relevant literature suggestions for the Holy Knights. The Elbaf Library needs a system that can help manage and present references that are in accordance with research needs. In addition, the relationship between papers is still difficult to map accurately, causing relevant references to often be missed.
 
-The goal of this competition is to encourage data scientists to hone their skills in building accurate predictive models. By participating, participants contribute to a deeper understanding of food price movements and their impact on food security and economic stability. In addition to improving technical skills, this competition also focuses on the importance of data-driven decision-making in managing the food supply chain and reducing the risk of price volatility.
+The Holy Knights in this competition are asked to build a machine learning model that can overcome these challenges. This model must be able to predict the citation relationship between papers. The main problem faced is how to help the Elbaf Library in building an optimal paper reference recommendation system.
+
+To evaluate the developed model, the MCC (Matthews Correlation Coefficient) evaluation metric will be used.
+
+
+This dataset consists of pairs of scientific documents, each with metadata such as title, abstract, and year of publication. Each row of data represents the probability that the first document (paper) cites the second document (referenced_paper).
+
+The task of the participants is to build a machine learning model to predict the value of is_referenced, i.e. whether the citation relationship actually occurs, based on the available information.
